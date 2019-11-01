@@ -1,0 +1,20 @@
+{
+    "name": "Jupyter",
+
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "jupyter",
+    "workspaceFolder": "/tf/notebooks",
+
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+
+    // Uncomment the next line if you want to publish any ports.
+    "appPort": [
+        8888
+    ],
+
+    "extensions": [
+        "ms-python.python"
+    ]
+}

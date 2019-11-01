@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jupyter:
+    image: tensorflow/tensorflow:latest-py3-jupyter
+    volumes:
+      - ..:/tf/notebooks
+
+  # web:
+  #   image: ubuntu
+  #   command: /bin/sh -c "while sleep 1000; do :; done"
+
+  #   volumes:
+  #     - ..:/workspace
+  #   links:
+  #     - jupyter
